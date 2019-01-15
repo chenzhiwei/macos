@@ -31,40 +31,20 @@ $ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/maste
 ## Install packages
 
 ```
-$ brew install bash-completion binutils coreutils findutils gawk git git-review gnupg gnu-sed gzip nmap tree wget openssl
-$ brew tap brona/iproute2mac
-$ brew install iproute2mac
+$ brew install bash-completion binutils coreutils findutils gawk git git-review gnupg gnu-sed gzip nmap tree wget openssl iproute2mac
 $ brew install https://raw.githubusercontent.com/kadwanev/bigboybrew/master/Library/Formula/sshpass.rb
+```
+
+## Install Cask packages
+
+```
+brew cask install google-chrome firefox
 ```
 
 ## Setup ~/.bash_profile
 
 ```
-## Terminal labal and title
-# PS1='\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
-PS1='\u@\h:\w\$ '
-PS1="\[\e]0;\u@\h: \w\a\]$PS1"
-
-## Bash completion
-. /usr/local/etc/bash_completion
-
-## Alias
-alias ls='ls --color=auto'
-alias grep='grep --color=auto'
-alias fgrep='fgrep --color=auto'
-alias egrep='egrep --color=auto'
-alias ll='ls -alF'
-alias la='ls -A'
-alias l='ls -CF'
-
-## PATH
-export PATH="/usr/local/opt/coreutils/libexec/gnubin:/usr/local/opt/gnu-sed/libexec/gnubin:/usr/local/opt/findutils/libexec/gnubin:/usr/local/opt/openssl/bin:$PATH"
-export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:/usr/local/opt/gnu-sed/libexec/gnuman:/usr/local/opt/findutils/libexec/gnuman:$MANPATH"
-export LDFLAGS="-L/usr/local/opt/openssl/lib"
-export CPPFLAGS="-I/usr/local/opt/openssl/include"
-export PKG_CONFIG_PATH="/usr/local/opt/openssl/lib/pkgconfig"
-
-. $HOME/works/linux/resources/.bash_improve
+cp .bash_profile ~/
 ```
 
 ## Setup Ubuntu env
