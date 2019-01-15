@@ -31,14 +31,14 @@ $ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/maste
 ## Install packages
 
 ```
-$ brew install bash-completion binutils coreutils findutils gawk git git-review gnupg gnu-sed gzip nmap tree wget openssl iproute2mac
+$ brew install bash-completion binutils coreutils findutils gawk git git-review gnupg gnu-sed gzip nmap tree wget openssl iproute2mac nvm
 $ brew install https://raw.githubusercontent.com/kadwanev/bigboybrew/master/Library/Formula/sshpass.rb
 ```
 
 ## Install Cask packages
 
 ```
-brew cask install google-chrome firefox
+brew cask install google-chrome firefox squirrel
 ```
 
 ## Setup ~/.bash_profile
