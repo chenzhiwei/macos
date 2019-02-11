@@ -38,7 +38,7 @@ $ brew install https://raw.githubusercontent.com/kadwanev/bigboybrew/master/Libr
 ## Install Cask packages
 
 ```
-brew cask install google-chrome firefox squirrel
+brew cask install android-platform-tools google-chrome firefox squirrel
 ```
 
 ## Setup ~/.bash_profile
